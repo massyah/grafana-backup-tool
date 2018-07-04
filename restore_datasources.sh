@@ -5,6 +5,6 @@ datasource_folder="$1"
 
 find "$datasource_folder" -mindepth 1 | while read f ; do
   echo "$f"
-  python $current_path/createDatasource.py "$f"
+  source venv/bin/activate && python $current_path/createDatasource.py "$f"
 done
 
