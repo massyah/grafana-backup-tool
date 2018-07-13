@@ -42,7 +42,8 @@ you can use them to
 You can see how to get token from here: [Grafana Web page](http://docs.grafana.org/http_api/auth/)
 
 ## How to Use
-* First edit **grafana_settings.py** as above.
+* First create a file '.env' at the project top level 
+* specify both GRAFANA_URL and GRAFANA_TOKEN in the '.env' file
 * Use **saveDashboards.py** to save each dashboard to each file.
 	* ex: python saveDashboards.py **folder_path**
 
